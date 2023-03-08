@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <meta name="Description" content="www lab" />
+    <meta name="Keywords" content="WWW;test" />
+    <meta name="Author" content="DO" />
+    <title>strona testowa</title>
+    <link rel="stylesheet" href="layout.css">
+    <script>
+        function czas() {
+            if (!document.write)
+
+                var godzina, minuty, sekundy, dzien, licz_dzien, miesiac, dzisiaj, rok, tekst_miesiac, tekst_dzien;
+            dzisiaj = new Date();
+            godzina=dzisiaj.getHours();
+            minuty=dzisiaj.getMinutes();
+            sekundy=dzisiaj.getSeconds();
+            rok=dzisiaj.getFullYear();
+            dzien=dzisiaj.getDate();
+            licz_dzien=dzisiaj.getDay();
+            if (licz_dzien==0) {tekst_dzien="Niedziela"}
+            if (licz_dzien==1) {tekst_dzien="Poniedziałek"}
+            if (licz_dzien==2) {tekst_dzien="Wtorek"}
+            if (licz_dzien==3) {tekst_dzien="Środa"}
+            if (licz_dzien==4) {tekst_dzien="Czwartek"}
+            if (licz_dzien==5) {tekst_dzien="Piątek"}
+            if (licz_dzien==6) {tekst_dzien="Sobota"}
+            miesiac=dzisiaj.getMonth();
+            if (miesiac==0) {tekst_miesiac="styczeń"}
+            if (miesiac==1) {tekst_miesiac="luty"}
+            if (miesiac==2) {tekst_miesiac="marzec"}
+            if (miesiac==3) {tekst_miesiac="kwiecień"}
+            if (miesiac==4) {tekst_miesiac="maj"}
+            if (miesiac==5) {tekst_miesiac="czerwiec"}
+            if (miesiac==6) {tekst_miesiac="lipiec"}
+            if (miesiac==7) {tekst_miesiac="sierpień"}
+            if (miesiac==8) {tekst_miesiac="wrzesień"}
+            if (miesiac==9) {tekst_miesiac="październik"}
+            if (miesiac==10) {tekst_miesiac="listopad"}
+            if (miesiac==11) {tekst_miesiac="grudzień"}
+            if (dzien < 10) {dzien="0"+dzien;}
+            if (godzina < 10) {godzina="0"+godzina;}
+            if (minuty < 10) {minuty="0"+minuty;}
+            if (sekundy < 10) {sekundy="0"+sekundy;}
+            pelnyczas=tekst_dzien + ", " + dzien +"&nbsp;"+ tekst_miesiac+"&nbsp;"+rok+" "
+                + godzina+":"+minuty+":"+sekundy;
+            if (document.layers){
+                document.layers.Data.document.write(pelnyczas)
+                document.layers.Data.document.close()
+            }
+
+            Data.innerHTML=pelnyczas
+            setTimeout("czas()",500)
+        }
+    </script>
+</head>
+
+<body onload="czas()">
+<header class="hero-image">
+<div class="hero-text">
+    <h1>Suwalszczyzna</h1>
+
+
+</div>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li onclick="menu('stronaglowna')">STRONA GLOWNA</li>
+                <li onclick="menu('historia')">HISTORIA</li>
+                <li onclick="menu('filmy')">FILMY O SUWALSZCZYZNIE</li>
+                <li onclick="menu('zlotu')">SUWALSZCZYZNA Z LOTU PTAKA</li>
+            </ul>
+        </nav>
+        <article>
+
+            <div id="stronaglowna" class="main">
+                <h1>AKTUALNOSCI</h1>
+                <p style="color: #343434; font-weight: bolder">„Doliną Czarnej Hańczy - promocja bioróżnorodności i udostępnienie turystyczne
+                    obszarów chronionych powiatu suwalskiego” - powiatowy projekt zrealizowany</p>
+                <div style="text-align:center; font-size: small;" >Dodano dnia: 2021-10-29</div>
+                <p>Dobiegła też końca realizacja projektu „Doliną Czarnej Hańczy - promocja bioróżnorodności i udostępnienie turystyczne
+                    obszarów chronionych powiatu suwalskiego” w ramach Regionalnego Programu Operacyjnego Województwa Podlaskiego na lata
+                    2014-2020, działanie 6.3. Ochrona zasobów bio- i georóżnorodności oraz krajobrazu w ramach Europejskiego Funduszu
+                    Rozwoju Regionalnego. Powstał nowy (3,1 km) odcinek zielonego szlaku rowerowego wraz ze ścieżką pieszo-rowerową.
+                </p>
+                <br>
+                <p style="color: #343434; font-weight: bolder">„Doliną Czarnej Hańczy - promocja bioróżnorodności i udostępnienie turystyczne
+                    obszarów chronionych powiatu suwalskiego” - powiatowy projekt zrealizowany</p>
+                <div style="text-align:center; font-size: small;" >Dodano dnia: 2021-10-29</div>
+                <p>Dobiegła też końca realizacja projektu „Doliną Czarnej Hańczy - promocja bioróżnorodności i udostępnienie turystyczne
+                    obszarów chronionych powiatu suwalskiego” w ramach Regionalnego Programu Operacyjnego Województwa Podlaskiego na lata
+                    2014-2020, działanie 6.3. Ochrona zasobów bio- i georóżnorodności oraz krajobrazu w ramach Europejskiego Funduszu
+                    Rozwoju Regionalnego. Powstał nowy (3,1 km) odcinek zielonego szlaku rowerowego wraz ze ścieżką pieszo-rowerową.
+                </p>
+
+            </div>
+
+            <div id="historia" class="main">
+                <h1>HISTORIA</h1>
+                <p><b>Tereny Suwalszczyzny porośnięte zwartą puszczą, stały się przedmiotem zasiedlenia już w IV w. p.n.e..</b></p>
+                <p>Przybyły tu znad Niemna i Mazur niewielkie grupy rodowe Bałtów Zachodnich - protoplastów Prusów i Jaćwingów.
+                    Osadnictwo z tego okresu można nazwać wyspowym. Osiedla mieszkalne składały się z 5 - 8 domów ustawionych na
+                    drewnianych rusztowaniach w zarastających zatoczkach jezior. Osiedla obronne były natomiast usytułowane na
+                    wysokich wzgórzach, otoczone płotem palisadowym i chronione u podnóża osadami obronnymi lub przynajmniej jedną
+                    osadą obronną. W początkach II w n.e. w okresie wpływów rzymskich (I - IV w. n.e.) nastąpił złoty wiek kultury
+                    Prusów i Jaćwingów. Objawiało się to masowym wytopem żelaza z rud darniowych (m.in. Osinki), używaniem broni i
+                    narzędzi żelaznych. W I i II w. zaczął funkcjonować BURSZTYNOWY SZLAK łączący Imperium Rzymskie z Sambią,
+                    Mazurami i Litwą. To wszystko wpłynęło na rozwój gospodarczy Jaćwieży. Rozwinęło się rolnictwo - hodowano:
+                    owce, bydło, świnie, tarpany, uprawiano: pszenicę, jęczmień, proso, żyto, groch. Rozwinęło się także rękodzielnictwo
+                    - tkactwo i przerób owczej wełny. Wyodrębniły się bogate rody, o czym świadczą znalezione w Szwajcarii (miejscowość
+                    pod Suwałkami) pochówki "książęce" wraz z ozdobami i bronią inkrustowaną srebrem.</p>
+                <p><b>Z okresu II-IV w. n.e. </b></p>
+                <p>na Suwalszczyźnie i wschodnich Mazurach rozpoznano ponad 20 cmentarzysk kurhanowych. Kurhany to kamienno-ziemne kopce
+                    o wysokości do około 0,5 - 0,8 m i średnicy kilku-kilkunastu metrów, często obłożone jeszcze głazami na wierzchu.
+                    Pod tym stropem grobowca, znajdowała się jama, gdzie chowano urnę z prochami (często w kształcie skrzyni) lub zwłoki
+                    wraz z ozdobami, narzędziami lub uzbrojeniem. Zdarzały sie także pochówki końskie z uprzężą (groby w Szwajcarii).
+                    Kurhan jest tym większy (u podstawy) im ważniejsza osoba w nim pochowana (kurhan znaleziony w Szwajcarii ma 30 m średnicy
+                    u podstawy). Takie bogactwo wskazuje, iż w II i IV w. Osinki (miejscowość obok Szwajcarii) było centrum organizacyjne
+                    obszaru nad górną Czarną Hańczą.</p>
+                <p><b> W średniowieczu (VII-XIII w.) </b></p>
+                <p>można mówić, iż ziemie jaćwieskie są społecznie i klasowo skrystalizowane. Podzielone na włości (kroniki XIII-wieczne wymieniają
+                    15 włości jaćwieskich), z centrami administracyjno-gospodarczymi mieszczącymi się w obronnych grodach i dokonują silnego rozwoju
+                    gospodarczego. Wszystkich takich centrów było 80, w tym na ziemiach polskich 40. Liczbę ludności zamieszkującą Jaćwież w tym
+                    okresie ocenia się na około 50 tysięcy.
+                    Wiara Jaćwingów była typowo politeistyczna. Czczono ciała niebieskie: słońce, księżyc i gwiazdy, zjawiska przyrodnicze: gromy
+                    i błyskawice oraz żywioły: wodę i ogień. Wierzono także w demony i bóstwa opiekuńcze. Przyszłość przepowiadali wróżbici i
+                    zaklinacze wężów. Wąż i kozioł były zwierzętami świętymi. Wiara w życie pozagrobowe i reinkarnację, nakazywały wyposażać zmarłych
+                    w przedmioty codziennego użytku. Nie budowano świątyń. Gromadzono się przy świętych drzewach i lasach, gdzie płonęły wieczne
+                    ogniska strzeżone przez kapłanów. Tam dokonywano obrzędów i składano ofiary - którymi byli również ludzie.
+                    Plemię Jaćwieskie było bardzo waleczne i nieokiełznane, prowadzące wiele wojen. W X - XII w. Jaćwingowie organizują liczne
+                    łupieżcze wyprawy na okoliczne ziemie ruskie i polskie. Wyprawy te nie uchodzą im bezkarnie. Pomimo to w XIII w. następuje
+                    zdecydowane nasilenie takich wypraw. Przyczyną było powstanie Wielkiego Księstwa Litewskiego i wykorzystywanie Jaćwingów jako
+                    "poborowych" przeciwko mieszkańcom okolicznych ziem.</p>
+                <p><b>LATA 1939-1944</b></p>
+                <p>Zmiany przyniósł wybuch II wojny światowej. Najpierw Suwalszczyzna stała się miejscem wpływów radzieckich (po opuszczeniu jej
+                    przez wojsko polskie, które wycofało się za linię Narwi). Po 20 września 1939 r. Armia Czerwona wkroczyła do Suwałk. Niemcy
+                    jednak domagali się od Rosjan powiatu suwalskiego dla siebie, podając jako powód roszczeń jej walory przyrodnicze. Podpisany
+                    w Moskwie układ radziecko-niemiecki o "Przyjaznych granicach" zawierał załącznik, w którym Stalin czynił prezent Ribbentropowi,
+                    oddając Suwlaszczyznę Niemcom. Zajęli oni Suwałki 12 października 1939 r. Rządy hitlerowskie nie różniły się od tych sprawowanych
+                    na innych okupowanych ziemiach polskich. Polegały na sianiu terroru wobec ludności cywilnej, wywozie do obozów koncentracyjnych
+                    i na roboty przymusowe w głąb Rzeszy oraz na eksterminacji Żydów i inteligencji polskiej.
+                    Wtedy to zaczęły się organizować grupy konspiracyjne. Pierwsza powstała w Suwałkach już w październiku 1939 r. z inicjatywy
+                    byłego kap. Stanisława Bielickiego i przyjęła nazwę Tymczasowej Rady Ziemi Suwalskiej. Wiosną 1940 r. zaczęły działać trzy
+                    inne grupy konspiracyjne:"Burza", "Sęp " i "Profesor". Poprzez inwigilację grupy te uległy przetrzebieniu. Nastąpiły aresztowania
+                    i wyroki skazujące na śmierć. Wielu wywieziono do obozów koncentracyjnych. Armia Krajowa prowadziła na Suwalszczyźnie walkę od
+                    1942 r. Działały tu oddziały "Żwirki", "Romana", "Leśniczego", "Konwy", "Orkana", "Jastrzębia", "Żytniewskiego". Oddziały te do
+                    października 1944 r. przeprowadziły 116 akcji zbrojnych, potyczek i bitew. Po paździeniku 1944 r., gdy Armia Czerwona wyzwoliła
+                    Suwalszczyznę nastąpił czas władzy ludowej.</p>
+                <p><b>WSPÓŁCZESNOŚĆ</b></p>
+                <p>W 1998 r. przywrócono powiaty, a Suwalszczyznę włączono do województwa podlaskiego. Natomiast rok wcześniej - jeszcze za czasów
+                    województwa suwalskiego - powołano do życia Euroregion Niemen - ponadpaństwową strukturę mającą na celu stworzenie współpracy
+                    gospodarczej pomiędzy regionami sąsiadujących ze sobą czterech państw: polskiej Suwalszczyzny, powiatów Alytus i Mariampol (Litwa),
+                    okręgu kaliningradzkiego (Rosja) i województwa grodzieńskiego (Białoruś).</p>
+
+            </div>
+            <div id="filmy" class="main">
+                <div class="header">
+                    <h1>Filmy o Suwalszczyznie</h1>
+                </div>
+
+
+                <div>
+
+                <iframe width="560" height="315" src="//www.youtube.com/embed/Q-VFRLIAUPk"></iframe>
+
+                <iframe width="560" height="315" src="//www.youtube.com/embed/ooX9QCpb0vQ"></iframe>
+
+                <iframe width="560" height="315" src="//www.youtube.com/embed/sW0P8G3eVYQ"></iframe>
+
+                </div>
+            </div>
+
+            <div id="zlotu" class="main row">
+                <div class="header">
+                    <h1>Suwalszczyzna z lotu ptaka</h1>
+                </div>
+
+                <div class="column">
+                    <div class="container">
+                        <a target="_blank" href="images/i1.jpg">
+                            <img src="images/i1.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <a target="_blank" href="images/i2.jpg">
+                            <img src="images/i2.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <a target="_blank" href="images/i3.jpg">
+                            <img src="images/i3.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <a target="_blank" href="images/i4.jpg">
+                            <img src="images/i4.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a target="_blank" href="images/i5.jpg">
+                            <img src="images/i5.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <a target="_blank" href="images/i6.jpg">
+                            <img src="images/i6.jpg" class="image hover-shadow" style="width:100%">
+                        </a>
+                        <div class="middle">
+                            <div class="text">Miejscowość Bryzgiel nad jez. Wigry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <p style="font-size: 1.1rem"><span style="font-size: 1em;">© 2002-2023  </span><span id="Data"></span><br></p>
+    </footer>
+
+    <script>
+        function menu(name) {
+            var main = document.getElementsByClassName("main");
+
+            for (let m of main) {
+                m.style.display = 'none';
+            }
+
+            var page = document.getElementById(name);
+            page.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
